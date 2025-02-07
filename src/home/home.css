@@ -1,0 +1,120 @@
+/* Estilos base */
+.home {
+    height: auto; /* Alteramos para "auto" para evitar problemas em telas pequenas */
+    min-height: 92.1vh; /* Garante uma altura mínima */
+    color: #eeeeee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.logo__container {
+    flex-direction: column;
+    width: 50rem; /* Largura total para telas menores */
+    min-width: 20rem;
+    text-align: center;
+    margin-bottom: 2rem; /* Espaçamento entre o logo e o conteúdo abaixo */
+}
+
+.logo__container > h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+    text-align: center;
+}
+
+.logo__container img {
+    width: 30%;
+    max-width: 200px; /* Limita o tamanho máximo da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.orcamento__container {
+    width: 30rem; /* Largura total para telas menores */
+    min-width: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.orcamento__container h1 {
+    font-size: 1.5rem;
+}
+
+.orcamento__container > a {
+    display: flex;
+    width: 100%; /* Largura total para telas menores */
+    max-width: 400px; /* Limita o tamanho máximo do link */
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-home {
+    justify-content: center;
+    background-color: #ffdd56;
+    padding: .5rem;
+    width: 100%; /* Largura total para telas menores */
+    max-width: 20rem; /* Limita o tamanho máximo do botão */
+    height: auto; /* Altura automática para ajustar o conteúdo */
+    border-radius: 0.2rem;
+    margin-top: 1rem;
+    gap: 1rem;
+    transition: all 0.5s;
+    letter-spacing: 0.1rem;
+    display: flex;
+    align-items: center;
+}
+
+.btn-home p {
+    color: #7e7e7e;
+    font-size: 1rem; /* Tamanho padrão para legibilidade */
+}
+
+.btn-home:hover {
+    background-color: #008000;
+    color: #eeeeee;
+}
+
+.btn-home:hover p {
+    color: #eeeeee;
+}
+
+.btn-home img {
+    width: 1.5rem;
+}
+
+.btn-icon-bco {
+    display: none;
+}
+
+.btn-icon-amarelo,
+.btn-icon-bco {
+    transition: all 1s;
+}
+
+.btn-home:hover .btn-icon-bco {
+    display: flex;
+}
+
+.btn-home:hover .btn-icon-amarelo {
+    display: none;
+}
+
+/* Media Queries para Telas Menores */
+@media (max-width: 768px) {
+    .logo__container > h1 {
+        font-size: 2.5rem; /* Reduz o tamanho da fonte */
+        line-height: 3rem;
+    }
+
+    .logo__container img {
+        width: 50%; /* Aumenta o tamanho da imagem para melhor visibilidade */
+    }
+
+    .btn-home {
+        font-size: 0.9rem; /* Reduz o tamanho da fonte no botão */
+        padding: 0.8rem; /* Reduz o espaçamento interno */
+    }
+}

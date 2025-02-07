@@ -1,0 +1,11 @@
+.parceiros__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+}
+
+.parceiros__container img {
+    width: 10%;
+}

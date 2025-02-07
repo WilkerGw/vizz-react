@@ -1,0 +1,104 @@
+/* Estilos base */
+.formulario-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; /* Largura máxima ajustada */
+  width: 100%; /* Largura total para telas menores */
+  margin: 0 auto; /* Centraliza o formulário */
+  padding: 20px;
+  box-sizing: border-box; /* Inclui o padding no cálculo da largura */
+  height: 100vh;
+}
+
+.formulario-container form {
+  width: 50%;
+  min-width: 50%;
+}
+
+.formulario-container h1 {
+  text-align: center; /* Centraliza o título */
+  font-size: 2rem; /* Tamanho padrão para legibilidade */
+  margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+
+.formulario-container div {
+  margin-bottom: 15px;
+}
+
+.formulario-container label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 1rem; /* Tamanho padrão para legibilidade */
+  color: #eeeeee;
+}
+
+.formulario-container input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  font-size: 1rem; /* Tamanho padrão para legibilidade */
+  color: #2e2e2e;
+  font-weight: bold;
+}
+
+.formulario-container button {
+  background-color: #ffdd56;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem; /* Tamanho padrão para legibilidade */
+  transition: all 0.3s;
+}
+
+.formulario-container button:hover {
+  background-color: #005400;
+  color: #eeeeee;
+}
+
+/* Pré-visualização da imagem */
+.formulario-container img {
+  max-width: 100%; /* Ajusta a imagem ao contêiner */
+  height: auto; /* Mantém a proporção da imagem */
+  margin-top: 10px; /* Espaçamento acima da imagem */
+}
+
+.imagem__receita {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imagem__receita img {
+  width: 40%;
+}
+
+/* Media Queries para Telas Menores */
+@media (max-width: 768px) {
+  .formulario-container {
+      padding: 10px; /* Reduz o espaçamento interno */
+      flex-wrap: wrap;
+      height: auto;
+  }
+
+  .formulario-container h1 {
+      font-size: 1.5rem; /* Reduz o tamanho do título */
+  }
+
+  .formulario-container label {
+      font-size: 0.9rem; /* Reduz o tamanho dos rótulos */
+  }
+
+  .formulario-container input {
+      font-size: 0.9rem; /* Reduz o tamanho da fonte nos campos */
+  }
+
+  .formulario-container button {
+      font-size: 0.9rem; /* Reduz o tamanho da fonte no botão */
+  }
+
+  .formulario-container form {
+    width: 100%;
+  }
+}

@@ -1,0 +1,91 @@
+/* Estilos base */
+.header__container {
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    color: #eeeeee;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    padding-inline: 1rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    letter-spacing: 0.1rem;
+    opacity: 70%;
+    transition: all 0.5s;
+    text-decoration: none;
+    color: #eeeeee;
+    text-shadow: 0px 0px 2px #2e2e2e;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        background-color: #272b2c;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        display: none;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+        padding: 1rem 0;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+/* Ícones de menu hamburguer e fechar */
+.menu-icon,
+.close-icon {
+    display: none;
+    font-size: 1.5rem;
+    color: #eeeeee;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    z-index: 1001;
+}
+
+@media (max-width: 768px) {
+    .menu-icon,
+    .close-icon {
+        display: block;
+    }
+
+    .menu-icon.hidden,
+    .close-icon.hidden {
+        display: none;
+    }
+}

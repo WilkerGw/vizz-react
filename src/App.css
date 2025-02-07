@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Staatliches&display=swap');
+
+
+:root{
+    --cinza-principal: #737d7f;
+}
+
+
+/* Reset de Estilos */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/* Estilos para o body */
+body {
+  font-family: "Archivo Black", serif;
+  line-height: 1.6;     
+  background-color: #2e2e2e;       
+}
+
+/* Remover estilos de links */
+a {
+  text-decoration: none;
+  color: inherit;  /* Herda a cor do texto do elemento pai */
+}
+
+/* Estilos para listas */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Estilos para tabelas */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+}
+
+/* Imagens e vídeos responsivos */
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Definindo o foco para os inputs e elementos interativos */
+input:focus,
+button:focus,
+select:focus {
+  outline: none; /* Remover o contorno padrão de foco */
+}
+
+/* Estilos de botão padrão */
+button {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  font-family: inherit;
+  font-size: inherit;
+  color: #7e7e7e;
+  border-radius: .3rem;
+}
+
+span {
+  color: #ffdd56;
+  font-weight: bold;
+}
+
+h1, p, h3 {
+  color: #eeeeee;
+}

@@ -1,0 +1,144 @@
+/* Estilos Gerais */
+.contato-section {
+  width: 100%;
+  min-height: 100vh; /* Altura mínima para garantir que o conteúdo seja exibido */
+  text-align: center;
+  padding: 2rem 1rem; /* Adiciona espaçamento interno */
+}
+
+.container__contato {
+  width: 100%;
+  max-width: 1200px; /* Limita a largura máxima */
+  margin: 0 auto;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem; /* Espaçamento entre os elementos */
+}
+
+.contato-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.contato-form {
+  flex: 1;
+  width: 100%; /* Largura total para telas menores */
+  max-width: 600px; /* Limita a largura máxima */
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #eeeeee;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 2rem;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 4rem;
+}
+
+.submit-button {
+  background-color: #ffdd56;
+  color: #5e5e5e;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.submit-button:hover {
+  background-color: #005400;
+}
+
+/* Informações de Contato */
+.contato-info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  background-color: #2e2e2e;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.contato_paragrafos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap; /* Permite que os elementos quebrem linha em telas menores */
+  padding: .5rem;
+}
+
+.contato-info p {
+  font-size: 0.9rem;
+  color: #eeeeee;
+  margin: 0;
+}
+
+.paragrafo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-inline: 2rem;
+  gap: .5rem;
+}
+
+.contato-icon {
+  width: 1rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .container__contato h1 {
+      font-size: 1.5rem; /* Reduz o tamanho do título */
+  }
+
+  .form-group label {
+      font-size: 0.9rem; /* Reduz o tamanho dos rótulos */
+  }
+
+  .form-group input,
+  .form-group textarea {
+      font-size: 0.9rem; /* Reduz o tamanho da fonte nos campos */
+  }
+
+  .submit-button {
+      font-size: 0.9rem; /* Reduz o tamanho da fonte no botão */
+      padding: 0.6rem 1.2rem;
+  }
+
+  .contato-info p {
+      font-size: 0.8rem; /* Reduz o tamanho do texto */
+  }
+}
