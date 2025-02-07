@@ -1,11 +1,9 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react";
+import { defineConfig } from 'vite';
 
 export default defineConfig({
-  plugins: [react()],
   build: {
     rollupOptions: {
-      external: ["axios"], // Informa ao Vite que `axios` é uma dependência externa
+      external: [], // Certifique-se de que nenhum módulo importante está sendo externalizado
     },
   },
 });
