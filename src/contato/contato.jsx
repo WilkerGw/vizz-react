@@ -1,6 +1,5 @@
 import React, { useState, useRef, useEffect } from "react"; // Importa os hooks do React
 import '../contato/contato.css'; // Importa os estilos
-import { db, collection, addDoc } from "../firebase"; // Importa o Firestore
 import IMask from 'imask'; // Importa a biblioteca IMask
 
 const Contato = () => {
@@ -20,7 +19,6 @@ const Contato = () => {
             const mask = IMask(telefoneRef.current, {
                 mask: "(00)00000-0000", // Define a máscara para o telefone
             });
-
             // Atualiza o estado do telefone quando o valor muda
             mask.on("accept", () => {
                 setTelefone(mask.value);
@@ -31,7 +29,6 @@ const Contato = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setLoading(true);
-
         try {
             // Validação dos campos obrigatórios
             if (!nome || !email || !mensagem) {
@@ -56,14 +53,8 @@ const Contato = () => {
                 return;
             }
 
-            // Salva os dados no Firestore
-            await addDoc(collection(db, "contatos"), {
-                nome: nome,
-                email: email,
-                telefone: telefone, // Agora o telefone sempre estará formatado
-                mensagem: mensagem,
-                timestamp: new Date().toISOString() // Adiciona um timestamp
-            });
+            // Simula o envio dos dados (sem Firebase)
+            console.log("Dados enviados:", { nome, email, telefone, mensagem });
 
             // Feedback de sucesso
             setMensagemStatus("Dados enviados com sucesso!");
@@ -88,7 +79,6 @@ const Contato = () => {
                     <form className="contato-form" onSubmit={handleSubmit}>
                         {/* Exibe mensagens de feedback */}
                         {mensagemStatus && <p className="status-message">{mensagemStatus}</p>}
-
                         <div className="form-group">
                             <label htmlFor="nome">Nome:</label>
                             <input
@@ -100,7 +90,6 @@ const Contato = () => {
                                 required
                             />
                         </div>
-
                         <div className="form-group">
                             <label htmlFor="email">E-mail:</label>
                             <input
@@ -112,7 +101,6 @@ const Contato = () => {
                                 required
                             />
                         </div>
-
                         <div className="form-group">
                             <label htmlFor="telefone">Telefone:</label>
                             <input
@@ -126,7 +114,6 @@ const Contato = () => {
                                 required
                             />
                         </div>
-
                         <div className="form-group">
                             <label htmlFor="mensagem">Mensagem:</label>
                             <textarea
@@ -137,7 +124,6 @@ const Contato = () => {
                                 required
                             ></textarea>
                         </div>
-
                         <button
                             type="submit"
                             className="submit-button"
@@ -146,7 +132,6 @@ const Contato = () => {
                             {loading ? "Enviando..." : "Enviar Mensagem"}
                         </button>
                     </form>
-
                     <div className="contato-info">
                         <div className="contato_paragrafos">
                             <div className="paragrafo">

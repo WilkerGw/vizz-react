@@ -51,7 +51,7 @@
 /* Mapa Integrado */
 .mapa-container {
   position: relative;
-  width: 700px;
+  width: 100%;
   height: 200px; /* Altura padrão para desktops */
   border-radius: 12px;
   overflow: hidden;
@@ -60,7 +60,6 @@
 
 .mapa-container iframe {
   width: 100%;
-  height: 100%; /* Altura total para se ajustar ao contêiner */
   border: 0;
 }
 
