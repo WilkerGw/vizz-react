@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import axios from "axios";
+import axios from "https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js";
 import '../orcamento/orcamento.css';
 
 const FormularioUpload = () => {
