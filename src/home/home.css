@@ -104,7 +104,7 @@
 /* Media Queries para Telas Menores */
 @media (max-width: 768px) {
     .home {
-        padding-block: 2rem;
+        padding: 5rem 0rem 1rem 0rem;
     }
     
     .logo__container > h1 {
@@ -123,6 +123,9 @@
 
     .orcamento__container > p {
         font-size: .7rem;
+    }
+    .orcamento__container h1 {
+        font-size: 1rem;
     }
 
 }

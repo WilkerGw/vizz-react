@@ -45,7 +45,7 @@ nav ul li a:hover {
     nav ul {
         flex-direction: column;
         align-items: center;
-        background-color: #272b2c;
+        background-color: #2e2e2e;
         position: absolute;
         top: 0;
         right: 0;
@@ -55,6 +55,10 @@ nav ul li a:hover {
 
     nav ul.active {
         display: flex;
+    }
+
+    nav ul li {
+        padding-block: .7rem;
     }
 
     nav ul li a {
@@ -72,7 +76,7 @@ nav ul li a:hover {
     font-size: 1.5rem;
     color: #eeeeee;
     cursor: pointer;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 10px;
     z-index: 1001;
