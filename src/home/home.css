@@ -1,7 +1,6 @@
 /* Estilos base */
 .home {
     height: auto; /* Alteramos para "auto" para evitar problemas em telas pequenas */
-    min-height: 92.1vh; /* Garante uma altura mínima */
     color: #eeeeee;
     display: flex;
     align-items: center;
@@ -104,17 +103,26 @@
 
 /* Media Queries para Telas Menores */
 @media (max-width: 768px) {
+    .home {
+        padding-block: 2rem;
+    }
+    
     .logo__container > h1 {
-        font-size: 2.5rem; /* Reduz o tamanho da fonte */
+        font-size: 2.1rem; /* Reduz o tamanho da fonte */
         line-height: 3rem;
     }
 
     .logo__container img {
-        width: 50%; /* Aumenta o tamanho da imagem para melhor visibilidade */
+        width: 30%; /* Aumenta o tamanho da imagem para melhor visibilidade */
     }
 
     .btn-home {
         font-size: 0.9rem; /* Reduz o tamanho da fonte no botão */
         padding: 0.8rem; /* Reduz o espaçamento interno */
     }
+
+    .orcamento__container > p {
+        font-size: .7rem;
+    }
+
 }

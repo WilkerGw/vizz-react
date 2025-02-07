@@ -3,14 +3,14 @@ import "../destaque/destaque.css"; // Arquivo de estilos
 
 const ProdutoDestaque = () => {
     const [imagemDestaque, setImagemDestaque] = useState(
-        "/public/images/destaque/01.png"
+        "/01.png"
     );
 
     const imagensProduto = [
-        "/public/images/destaque/01.png",
-        "/public/images/destaque/02.png",
-        "/public/images/destaque/03.png",
-        "/public/images/destaque/04.png"
+        "/01.png",
+        "/02.png",
+        "/03.png",
+        "/04.png"
     ];
 
     const handleThumbnailClick = (imagem) => {

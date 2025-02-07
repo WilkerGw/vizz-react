@@ -9,3 +9,15 @@
 .parceiros__container img {
     width: 10%;
 }
+
+@media (max-width: 768px) {
+
+    .parceiros__container {
+        gap: 1rem;
+    }
+
+    .parceiros__container img {
+        width: 15%;
+    }
+    
+}

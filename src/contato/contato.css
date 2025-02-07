@@ -139,6 +139,12 @@
   }
 
   .contato-info p {
+    text-align: justify;
+    hyphens: auto;
       font-size: 0.8rem; /* Reduz o tamanho do texto */
+  }
+
+  .contato_paragrafos {
+    justify-content: flex-start;
   }
 }

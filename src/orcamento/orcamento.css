@@ -77,7 +77,7 @@
 /* Media Queries para Telas Menores */
 @media (max-width: 768px) {
   .formulario-container {
-      padding: 10px; /* Reduz o espaçamento interno */
+      padding-block: 5rem; /* Reduz o espaçamento interno */
       flex-wrap: wrap;
       height: auto;
   }

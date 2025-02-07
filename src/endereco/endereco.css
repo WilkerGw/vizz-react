@@ -78,6 +78,8 @@
   }
 
   .endereco-info p {
+      text-align: justify;
+      hyphens: auto;
       font-size: 0.9rem; /* Reduz o tamanho do texto */
   }
 
