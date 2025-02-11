@@ -4,7 +4,6 @@
   justify-content: space-between;
   align-items: center;
   width: 100%; /* Largura máxima ajustada */
-  width: 100%; /* Largura total para telas menores */
   margin: 0 auto; /* Centraliza o formulário */
   padding: 20px;
   box-sizing: border-box; /* Inclui o padding no cálculo da largura */
